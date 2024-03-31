@@ -873,7 +873,7 @@
                     />
 
                     <hr />
-                    <Input
+                    <input
                         type='checkbox'
                         checked={this.state.isFatal}
                         onChange={this.updateIsFatal}
