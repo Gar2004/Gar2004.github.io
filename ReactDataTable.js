@@ -7,11 +7,11 @@
             });
         }
 
-        /* let updateIsFatal = (clickEvent) => {
-             props.updateFormState({
-                 isFatal: clickEvent.target.checked,
-             });
-         }*/
+        /*let updateIsFatal = (clickEvent) => {
+            props.updateFormState({
+                isFatal: clickEvent.target.checked,
+            });
+        }*/
 
         return (
             <React.Fragment>
@@ -873,7 +873,7 @@
                     />
 
                     <hr />
-                    <Input
+                    <input
                         type='checkbox'
                         checked={this.state.isFatal}
                         onChange={this.updateIsFatal}
