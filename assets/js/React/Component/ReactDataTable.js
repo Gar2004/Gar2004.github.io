@@ -7,12 +7,6 @@
             });
         }
 
-        /*let updateIsFatal = (clickEvent) => {
-            props.updateFormState({
-                isFatal: clickEvent.target.checked,
-            });
-        }*/
-
         return (
             <React.Fragment>
                 <div className='container'>
@@ -49,39 +43,39 @@
 
     }
     const DataTable = (props) => {
-        //return (
-        <div className="table-responsive">
-            <table className="table">
-                <tbody>
-                    <tr>
-                        <th>Common Name</th>
-                        <th>Scientific Name</th>
-                        <th>Order</th>
-                        <th>Size</th>
-                        <th>Date of Discovery</th>
-                        <th>Body of Water</th>
-                        <th>Depth in Water</th>
-                        <th>Fatal</th>
-                    </tr>
+        return (
+            <div className="table-responsive">
+                <table className="table">
+                    <tbody>
+                        <tr>
+                            <th>Common Name</th>
+                            <th>Scientific Name</th>
+                            <th>Order</th>
+                            <th>Size</th>
+                            <th>Date of Discovery</th>
+                            <th>Body of Water</th>
+                            <th>Depth in Water</th>
+                            <th>Fatal</th>
+                        </tr>
 
-                    {props.dataToDisplay.map((row, i) => {
-                        return (
-                            <tr key={i}>
-                                <td>{row.common}</td>
-                                <td>{row.scientific}</td>
-                                <td>{row.order}</td>
-                                <td>{row.size}</td>
-                                <td>{row.date}</td>
-                                <td>{row.location}</td>
-                                <td>{row.depth}</td>
-                                <td>{row.fatal ? 'Yes' : 'No'}</td>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
-        </div>
-        // );
+                        {props.dataToDisplay.map((row, i) => {
+                            return (
+                                <tr key={i}>
+                                    <td>{row.common}</td>
+                                    <td>{row.scientific}</td>
+                                    <td>{row.order}</td>
+                                    <td>{row.size}</td>
+                                    <td>{row.date}</td>
+                                    <td>{row.location}</td>
+                                    <td>{row.depth}</td>
+                                    <td>{row.fatal ? 'Yes' : 'No'}</td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        );
     }
 
     const lolData = [
@@ -833,20 +827,15 @@
             super(props);
             this.originalData = props.originalData;
             this.state = {
-                order: '',
-                isFatal: false,
+                order: ''
             };
 
             this.updateFormState = this.updateFormState.bind(this);
-            this.updateIsFatal = this.updateIsFatal.bind(this);
+
         }
 
         updateFormState(specification) {
             this.setState(specification);
-        }
-
-        updateIsFatal(event) {
-            this.setState({ isFatal: event.target.checked });
         }
 
         render() {
@@ -854,13 +843,9 @@
 
             if (this.state.order !== '') {
                 filteredData = filteredData.filter(
-                    (row) => row.order === this.state.order
-                );
-            }
-
-            if (this.state.isFatal) {
-                filteredData = filteredData.filter(
-                    (row) => row.isFatal === true
+                    (row) => {
+                        return row.order === this.state.order.toLocaleLowerCase();
+                    }
                 );
             }
 
@@ -868,16 +853,10 @@
                 <React.Fragment>
                     <Filters
                         order={this.state.order}
-                        isFatal={this.state.isFatal}
                         updateFormState={this.updateFormState}
                     />
 
                     <hr />
-                    <input
-                        type='checkbox'
-                        checked={this.state.isFatal}
-                        onChange={this.updateIsFatal}
-                    />
 
                     <DataTable
                         dataToDisplay={filteredData}
@@ -890,62 +869,4 @@
     const container = document.getElementById('react-data-table');
     const root = ReactDOM.createRoot(container);
     root.render(<ReactDataTable originalData={lolData} />);
-
-    /*class ReactDataTable extends React.Component {
-        constructor(props) {
-            super(props);
-            this.originalData = props.originalData;
-            this.state = {
-                order: '',
-                isFatal: false,
-            };
-    
-            this.updateFormState = this.updateFormState.bind(this);
-            
-        }
-        updateFormState(specification) {
-            this.setState(specification);
-        }
-    
-        render() {
-            let filteredData = this.originalData;
-    
-            if (this.state.order !== '') {
-                filteredData = filteredData.filter(
-                    (row) => row.order === this.state.order
-                );
-            }
-    
-            if (this.state.isFatal) {
-                filteredData = filteredData.filter(
-                    (row) => row.isFatal === true
-                );
-            }
-    
-            return (
-                <React.Fragment>
-                    <Filters
-                        order={this.state.order}
-                        isFatal={this.state.isFatal}
-                        updateFormState={this.updateFormState}
-                    />
-    
-                    <hr />
-                    <Input
-                        type='checkbox'
-                        checked={this.state.isFatal}
-                        onChange={updateIsFatal}
-                    />
-    
-                    <DataTable
-                        dataToDisplay={filteredData}
-                    />
-                </React.Fragment>
-            );
-        }
-    }
-    
-    const container = document.getElementById('react-data-table');
-    const root = ReactDOM.createRoot(container);
-    root.render(<ReactDataTable originalData={lolData} />);*/
 })();
