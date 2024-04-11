@@ -3,14 +3,23 @@
 
 <head>
     <title>Garret's Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/d6637d3db0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
@@ -27,10 +36,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -44,21 +53,60 @@
     <div class="About" id="about">
         <div class="container">
             <div class="row">
-                <h1>Garret Woodman</h1>
+                <div class="col-md-12">
+                    <h1 id="header">Garret Woodman</h1>
+                </div>
             </div>
             <div class="row">
-                <h2>Web Developer in progress</h2>
+                <div class="col-md-12">
+                    <div class="subheader1">
+                        <h3>Web Developer in progress</h3>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p>
-                        Welcome to my portfolio! <br>
-                        I'm a GIMM student at BSU finishing up my second year of university. <br>
+                    <p id="content_border">
+                        Welcome to my portfolio!
+                        I'm a GIMM student at BSU finishing up my second year of university.
                         My career interests include web development, 3D modeling, data analysis and content management.
-                        <br>
-                        This website is meant to be an up to date record <br>
+                        This website is meant to be an up to date record
                         of my completed works.
                     </p>
+
+                    <br>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Current Knowledge In...</h4>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img id="Knowledge"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/480px-HTML5_Badge.svg.png"
+                                    alt="HTML5_Badge, wikimedia">
+                            </div>
+                            <div class="col-md-3">
+                                <img id="Knowledge"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                                    alt="CSS3_Badge, wikimedia">
+                            </div>
+                            <div class="col-md-3">
+                                <img id="Knowledge"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png"
+                                    alt="JavaScript_Badge, wikimedia">
+                            </div>
+                            <div class="col-md-3">
+                                <img id="Knowledge"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1280px-R_logo.svg.png"
+                                    alt="R_Badge, wikimedia">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-6">
                     <img id="profile" src="GarretWoodman.jpg" alt="Garret Woodman">
@@ -67,105 +115,239 @@
             </div>
 
         </div>
+        <br>
+
 
         <hr>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Current Knowledge In...</h2>
-                </div>
-            </div><br>
-            <div class="container-fluid">
+            <div class="Projects" id="projects">
                 <div class="row">
-                    <div class="col-md-2">
-                        <h6 id="Knowledge">html</h6>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 id="Knowledge">css</h6>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 id="Knowledge">Javascript</h6>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 id="Knowledge">R Studio</h6>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h2 id="header">Projects</h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 id="subheader">The Witch's Flower</h4>
+                        <div class="row">
+                            <div class="col-md-12" id="content_border2">
+                                <p>This artifact is my very first attempt at game development/ c#
+                                    coding. This game is a
+                                    basic
+                                    2D
+                                    platformer
+                                    gamer with various shooting elements. This project allowed me to get familiar with
+                                    the unity
+                                    2D
+                                    layout
+                                    as well as the general game development process. This project peaked my interest as
+                                    I could
+                                    see
+                                    my
+                                    code’s outcome via visual game mechanics. </p>
+                                <p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="skills">
+                                <p>Skills used: C#, Unity, 2D Game Development</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> Watch my game trailer for The Witch's Flower below: </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="responsive-video">
+                                <video controls>
+                                    <source src="GIMM 270 Game Trailer.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <!--<video controls>
+                        <source src="GIMM 270 Game Trailer.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+
+                        Your browser does not support the video tag.
+                    </video>-->
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="subheader">Satan's Soup</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="content_border2">Satan’s soup is an AR game where you play as a demon attempting to
+                            collect ingredients to
+                            make
+                            into a
+                            soup for Satan in order to save your friend’s soul. As you encounter enemies along the way
+                            you
+                            must scan
+                            various ingredient cards to pass through the level</p>
+
+                        <div class="row">
+                            <div class="col-md-12" id="skills">
+                                <p>Skills used: C#, Unity game development, 2D Game Development </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class=" row">
+                            <div class="col-md-12">
+                                <P>Look at our Powerpoint below:</P>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="responsive-iframe">
+                                    <iframe
+                                        src="https://docs.google.com/presentation/d/e/2PACX-1vTk8NyEkClkjxfw1oOZ324TBT9bNJgvWrXL0hL9_HTcvS8MPHsXpPh9NClxUVwB9Y4Y7z5jnmZHViZX/embed?start=false&loop=false&delayms=15000"
+                                        frameborder="0" allowfullscreen="true" mozallowfullscreen="true"
+                                        webkitallowfullscreen="true"></iframe>
+                                </div>
+                                <!--<iframe
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vTk8NyEkClkjxfw1oOZ324TBT9bNJgvWrXL0hL9_HTcvS8MPHsXpPh9NClxUVwB9Y4Y7z5jnmZHViZX/embed?start=false&loop=false&delayms=15000"
+                        frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+                        webkitallowfullscreen="true"></iframe>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="subheader">Jellyfish Guide</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="content_border2">This guide is a web page ran on a pm2 server. This guide provides an
+                            overview of
+                            Jellyfish
+                            anatomy/terminology as well as a React.js data table and various D3.js data
+                            visualizations.
+                            This
+                            project
+                            gave me a general overview of html and css as well as allowed me to look into
+                            various
+                            jellyfish
+                            species
+                            (which while time consuming) was some what interesting. </p>
+                        <div class="row">
+                            <div class="col-md-12" id="skills">
+                                <p>Skills used: React.js, D3.js, html, css, pm2 server</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Click on the below image:</p>
+                            </div>
+                            <div class="box">
+                                <img src="https://static.scientificamerican.com/sciam/cache/file/B7E980C5-B182-4A2E-80369F2AC535EB35_source.jpg?w=1200"
+                                    alt="scientificamerican" class="image">
+                                <div class="middle">
+                                    <div class="text">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a href="Final.html">Jellyfish Guide</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
             </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container">
-        <div class="Projects" id="projects">
-            <h2>Projects</h2>
-            <h4>The Witch's Flower</h4>
-            <p>This artifact is my very first attempt at game development/ c# coding. This game is a basic 2D platformer
-                gamer with various shooting elements. This project allowed me to get familiar with the unity 2D layout
-                as well as the general game development process. This project peaked my interest as I could see my
-                code’s outcome via visual game mechanics. </p>
-            <p>
-                Skills used: C#, Unity, 2D Game Development
-            </p>
-            <p> Watch my game tralor for The Witch's Flower below: </p>
-            <video controls>
-                <source src="GIMM 270 Game Trailer.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
             <br>
 
-            <h4>Satan's Soup</h4>
-            <p>Satan’s soup is an AR game where you play as a demon attempting to collect ingredients to make into a
-                soup for Satan in order to save your friend’s soul. As you encounter enemies along the way you must scan
-                various ingredient cards to pass through the level</p>
-            <p>Skills used: C#, Unity game development, 2D Game Development </p>
-            <P>Look at our Powerpoint below:</P>
-            <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vTk8NyEkClkjxfw1oOZ324TBT9bNJgvWrXL0hL9_HTcvS8MPHsXpPh9NClxUVwB9Y4Y7z5jnmZHViZX/embed?start=false&loop=false&delayms=15000"
-                frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
-                webkitallowfullscreen="true"></iframe>
+            <hr>
+            <br>
+            <br>
+            <div class="container">
+                <div class="Contact" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 id="header">Contact Me!</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="subheader1">
+                                <h3>Additional questions? Reach out!</h3>
+                            </div>
 
-            <h4>Jellyfish Guide</h4>
-            <p>This guide is a web page ran on a pm2 server. This guide provides an overview of Jellyfish
-                anatomy/terminology as well as a React.js data table and various D3.js data visualizations. This project
-                gave me a general overview of html and css as well as allowed me to look into various jellyfish species
-                (which while time consuming) was some what interesting. </p>
-            <a href="Final.html">Click here to view the Jellyfish Guide</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
 
-        </div>
+                            <p>
 
-    </div>
+                                <a href="mailto:garwood2004@gmail.com"><i class="fa-solid fa-envelope">
+                                    </i> garwood2004@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                208-921-8996
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><a href="https://www.linkedin.com/in/garret-woodman/"><i class="fa-brands fa-linkedin">
+                                    </i>LinkedIn</a>
+                            <div class=" row">
+                                <div class="col-md-12">
+                                    <p><a href="https://github.com/Gar2004"><i class="fa-brands fa-github">
+                                            </i>Github</a>
+                                    </p>
+                                </div>
+                            </div>
 
-    <hr>
 
-    <div class="container">
-        <div class="Contact" id="contact">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Contact Me!</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p><a href="mailto:garretwoodman@u.boisestate.edu"><i class="fa-solid fa-envelope"></i>Email</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p><a href="https://github.com/Gar2004"><i class="fa-brands fa-github">Github</i></a></p>
-                </div>
-            </div>
+                        </div>
 
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
+                        <br>
+                        <br>
+                        <br>
 
 
 
